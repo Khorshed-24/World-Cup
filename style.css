@@ -18,3 +18,173 @@ body {
     font-size: 70px;
 }
 
+.banner-text button {
+    background: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: 700;
+    padding: 16px 25px;
+    gap: 10px;
+}
+
+.banner .banner-image img {
+    width: 581px;
+    height: 613px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.main {
+    padding-top: 90px;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #161616;
+    font-weight: 800;
+}
+
+.match-details {
+    margin-top: 25px;
+    width: 312px;
+    height: 262px;
+    background: #161616;
+    border-radius: 10px;
+}
+
+.boxes {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    background-color: #FFFFFF;
+    padding: 17px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.color {
+    background-color: #DD0000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog,
+.germany-vs-france {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin: 24px;
+}
+
+.blog .blog-image img {
+    width: 312px;
+    height: 175px;
+    border-radius: 5px;
+}
+
+.blog-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.special-button {
+    display: none;
+}
+
+footer {
+    padding: 130px;
+    color: #E8E8E8;
+    text-align: center;
+    background-color: #161616;
+}
+
+.border {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.more-info {
+    color: #B9B9B9;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 0px;
+}
+
+.fa-brands {
+    font-size: 25px;
+}
+
+.time {
+    color: #4D4D4D;
+}
+
+.germany-vs-france {
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+}
+
+@media only screen and (max-width:688px) {
+    body {
+        margin: 0px;
+    }
+
+    .main {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner,
+    .container,
+    .more-info {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .banner .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:991px) {
+    body {
+        margin: 0px;
+    }
+
+    .main {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner,
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
